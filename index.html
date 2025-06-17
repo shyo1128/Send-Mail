@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter to You</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS 파일 링크 -->
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header>
+      <h1>Letter to You</h1>
+      <p>
+        Write your letter down, choose a date, and press the Send button below!
+        <br />
+        I will send you the precious letter for him(her). ❤️
+      </p>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+      <div>
+        <br />
+        <!-- 체크박스 옵션 - To her, To him -->
+        <section>
+          <label>
+            <input type="radio" name="recipient" value="toHer" required />
+            <span></span> To her
+          </label>
+
+          <label>
+            <input type="radio" name="recipient" value="toHim" required />
+            <span></span> To him
+          </label>
+        </section>
+        <br />
+        <!-- 날짜 선택 -->
+        <section>
+          <label for="sendDate">When:</label> <br />
+          <input type="date" id="sendDate" name="sendDate" required />
+        </section>
+        <br />
+        <!-- 편지 내용 입력 -->
+        <section>
+          <label for="contents">Contents:</label> <br />
+          <textarea
+            id="contents"
+            name="contents"
+            rows="6"
+            placeholder="Write your letter here..."
+            required
+          ></textarea>
+        </section>
+
+        <!-- Send 버튼 -->
+        <section>
+          <button type="submit" id="sendButton">Send</button>
+        </section>
+      </div>
+
+      <!-- 사이드 영역에 이미지 삽입 -->
+      <aside>
+        <img src="/SendLetter/we.png" alt="Letter image" />
+      </aside>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+      <p>© 2025 Letter to You. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- JavaScript 연결 (나중에 추가할 예정) -->
+  </body>
+</html>
