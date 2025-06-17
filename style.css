@@ -1,0 +1,151 @@
+/* 1) Lora 글씨체 적용 */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lora', serif; /* Lora 글씨체 */
+  background-color: #acca92; /* 배경색 */
+  color: #333; /* 기본 텍스트 색상 */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* 2) 제목 스타일 */
+h1 {
+  color: #d44720; /* 제목 색상 */
+  text-align: center;
+  font-size: 3em; /* 크기 조정 */
+  margin-bottom: 20px;
+}
+
+/* 3) 소제목 스타일 */
+p {
+  color: #78614d; /* 소제목 색상 */
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* 4) 내용 블록 스타일 (그림자와 배경색) */
+main > div {
+  background-color: #e9a752; /* 블록 색상 */
+  color: #d44720; /* 내용 텍스트 색상 */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  width: 90%; /* 너비 조정 */
+}
+
+/* 5) 체크박스 스타일 (To her, To him) */
+section label {
+  font-size: 1.2em;
+  margin-right: 30px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+section input[type='radio'] {
+  display: none; /* 기본 체크박스를 숨김 */
+}
+
+section input[type='radio'] + span {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d44720;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+section input[type='radio']:checked + span {
+  background-color: #d44720;
+  border-color: #d44720;
+}
+
+section input[type='radio']:checked + span::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+section input[type='radio']:hover + span {
+  background-color: #e9a752;
+  border-color: #e9a752;
+}
+
+/* 6) 날짜 선택 (When) 스타일 */
+input[type='date'] {
+  width: 90%;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+input[type='date']:focus {
+  border-color: #d44720;
+}
+
+/* 7) 편지 내용 (Contents) 스타일 */
+textarea {
+  width: 90%;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: #d44720;
+}
+
+/* 8) Send 버튼 스타일 */
+button {
+  background-color: #d44720; /* 버튼 색상 */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9d3616;
+}
+
+/* 9) 사이드 이미지 스타일 */
+aside img {
+  max-width: 100%; /* 화면 크기에 맞게 이미지 크기 자동 조정 */
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* 10) 푸터 스타일 */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
